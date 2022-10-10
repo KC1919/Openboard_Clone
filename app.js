@@ -4,6 +4,10 @@ const socket = require("socket.io");
 
 app.use(express.static("public"));
 
+app.get("/",(req,res)=>{
+    res.sendFile('index.html');
+})
+
 
 const server = app.listen(process.env.PORT, (res) => {
     console.log("Server listening on port: 3000");
