@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBoard Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <div class="head-cont"> -->
+        <div id="ham-div" class="options-cont">
+            <i id="ham-icon" class="fa fa-bars hamburg" aria-hidden="true"></i>
+            <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+        </div>
+    
+        <div id="func-div" class="func-cont scale-tools">
+            <img id="pencil" class="func-icon" src="./img/pencil.png" alt="">
+            <img id="eraser" class="func-icon" src="./img/eraser.png" alt="">
+            <img id="download" class="func-icon" src="./img/download.png" alt="">
+            <img id="upload" class="func-icon" src="./img/upload.png" alt="">
+            <img id="undo" class="func-icon" src="./img/undo.png" alt="">
+            <img id="redo" class="func-icon" src="./img/redo.png" alt="">
+            <img id="sticky-note-icon" class="func-icon" src="./img/sticky-note.png" alt="">
+        </div>
+    <!-- </div> -->
+    
+    <div id="pencil-modal-cont" class="pencil-modal">
+        <input id="slider" type="range" min="1" max="20" value=3>
+        <div class="color-cont">
+            <button id="color-1" class="color-btn"></button>
+            <button id="color-2" class="color-btn"></button>
+            <button id="color-3" class="color-btn active" style="box-shadow: 0 0 5px;"></button>
+        </div>
+    </div>
+
+    <div class="eraser-cont">
+        <input id="eraser-slider" type="range" min="5" max="30" value="5">
+    </div>
+
+    <!-- <div class="sticky-cont" draggable=true>
+        <div class="sticky-head-cont">
+            <button class="note-btn" title="minimize"></button>
+            <button class="note-btn" title="close"></button>
+        </div>
+
+        <div class="sticky-note-cont">
+            <textarea name="sticky-note" class="sticky-textarea" ></textarea>
+        </div>
+    </div> -->
+
+    <canvas class="canvas"></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js" integrity="sha512-VJ6+sp2E5rFQk05caiXXzQd1wBABpjEj1r5kMiLmGAAgwPItw1YpqsCCBtq8Yr1x6C49/mTpRdXtq8O2RcZhlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const socket=io.connect("http://localhost:3000");
+    </script>
+    <script src="script.js"></script>
+    <script src="canvas.js"></script>
+</body>
+</html>
