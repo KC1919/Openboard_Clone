@@ -3,11 +3,10 @@ const app = express();
 const socket = require("socket.io");
 const path=require("path");
 
-
+app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
-    app.use(express.static("public"));
-    // res.sendFile(path.join(__dirname+'/public/index.html'));
+    res.sendFile("./public/index.html");
 })
 
 const server = app.listen(process.env.PORT || 3000, (res) => {
