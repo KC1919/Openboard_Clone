@@ -18,7 +18,7 @@ body{
 } */
 
 .options-cont{
-    height:7%;
+    height:8%;
     width:4%;
     position: fixed;
     left: 2rem;
@@ -34,8 +34,8 @@ body{
 }
 
 #ham-icon{
-    height: 40%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +48,12 @@ body{
 
 .func-cont{
     position: fixed;
-    left: 20rem;
-    top: 1rem;
+    left: 25%;
+    top: 1em;
     width: 55%;
     height: 5rem;
     margin-left: 2%;
+    margin-right: 2%;
     display: none;
     justify-content: space-around;
     align-items: center;
