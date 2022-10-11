@@ -76,6 +76,7 @@ body{
 .pencil-modal{
     height: 10%;
     width: 7%;
+    min-width: 7rem;
     position: fixed;
     top: 6em;
     left: 27%;
