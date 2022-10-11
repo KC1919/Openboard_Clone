@@ -74,11 +74,11 @@ body{
 }
 
 .pencil-modal{
-    height: 5rem;
-    width: 7rem;
+    height: 10%;
+    width: 7%;
     position: fixed;
-    top: 6rem;
-    left: 25rem;
+    top: 6em;
+    left: 27%;
     text-align: center;
     display: none;
     background-color: aliceblue;
@@ -126,8 +126,8 @@ body{
 .eraser-cont{
     width: 6rem;
     height: 3rem;
-    position: absolute;
-    left: 34rem;
+    position: fixed;
+    left: 35%;
     top: 6rem;
     justify-content: center;
     align-items: center;
