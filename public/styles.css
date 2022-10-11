@@ -30,8 +30,16 @@ body{
     border-radius: 50%;
     cursor: pointer;
     margin-left: 2rem;
-    font-size: 150%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#ham-icon{
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
 }
 
 .options-cont:hover{

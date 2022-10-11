@@ -3,13 +3,16 @@ const app = express();
 const socket = require("socket.io");
 const path=require("path");
 
+require("dotenv").config();
+
 app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
     res.sendFile("./public/index.html");
 })
 
-const server = app.listen(process.env.PORT || 3000, (res) => {
+const server = app.listen(process.env.PORT || 8080, (res) => {
+    console.log(process.env.PORT);
     console.log("Server listening on port: 3000");
 });
 
