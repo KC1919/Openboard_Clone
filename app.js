@@ -11,7 +11,7 @@ app.get("/",(req,res)=>{
     res.sendFile("./public/index.html");
 })
 
-const server = app.listen(process.env.PORT || 8080, (res) => {
+const server = app.listen(process.env.PORT || 3000, (res) => {
     console.log(process.env.PORT);
     console.log("Server listening on port: 3000");
 });
